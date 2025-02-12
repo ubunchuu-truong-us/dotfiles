@@ -11,13 +11,17 @@ $line_break\
 $python\
 $character"""
 
+# timeout ignore the long runtime command
+ignore_timeout = true
+command_timeout = 1000 # for normal packages that cannot ignore
+
 [directory]
 style = "blue"
 
 [character]
-success_symbol = "[❯](purple)"
-error_symbol = "[❯](red)"
-vimcmd_symbol = "[❮](green)"
+success_symbol = "[➜](purple)"
+error_symbol = "[➜](red)"
+vimcmd_symbol = "[➜](green)"
 
 [git_branch]
 format = "[$branch]($style)"
